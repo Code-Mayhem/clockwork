@@ -17,7 +17,8 @@ website.use(express.static(path.join(__dirname, '_build')));
 require('./routes')(website);
 var jsonFile = './data/data.json';
 
-require('./website/sms')(jsonFile);
+//require('./website/sms');
+
 
 http.listen(website.get('port'), function(){
     console.log('website is listening on port: ' + website.get('port'));

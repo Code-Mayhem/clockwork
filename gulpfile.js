@@ -97,11 +97,11 @@ gulp.task('default', function() {
 gulp.task('watch', ['server'], function() {
 	gulp.watch(src.views + '/**/*.hbs', ['compile-html']);
 	gulp.watch(src.scripts + '/*.js', ['scripts']);
-	gulp.watch(src.styles + '/*.scss', ['styles']);
-	gulp.watch(src.views + '/**/*.scss', ['styles']);
+	gulp.watch(src.styles + '/*.scss', ['sass']);
+	gulp.watch(src.views + '/**/*.scss', ['sass']);
 	gulp.watch(src.data + '/*.json', ['compile-html']);
 });
 
 gulp.task('dev', function() {
-	runSeq(['sass-generate-contents'], ['sass', 'scripts', 'compile-html']);
+	runSeq(['sass-generate-contents'], ['scripts', 'compile-html']);
 });
