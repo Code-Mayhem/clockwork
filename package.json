@@ -2,7 +2,7 @@
   "name": "muapp",
   "version": "0.0.1",
   "scripts": {
-    "start": "npm start"
+    "start": "node website.js"
   },
   "main": "app.js",
   "devDependencies": {
