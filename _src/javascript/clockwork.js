@@ -4,7 +4,7 @@
   window.code = window.code || {};
   var clockwork = window.code.clockwork = function (options) {
 
-    var url = 'https://damp-mesa-4509.herokuapp.com/';
+    var url = 'https://damp-mesa-4509.herokuapp.com/receive-sms?to=84433&from=441234567890&content=Hello+World&keyword=hello&msg_id=AB_12345';
 
     function init () {
       httpGet();
